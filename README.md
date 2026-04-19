@@ -4,10 +4,12 @@ todo:
   - links to the other userscripts
   - demonstration screenshots
  
-- - figure out why rabbits appear next to the download buttons despite having the rabbits set to hide the download buttons (probably an issue on quiCKIE's end)
+ - figure out why rabbits appear next to the download buttons despite having them set to hide the download buttons (i.e. shows 🐰DL despite 🙈 setting)
+   - (probably an issue on quiCKIE's end with its handling of third party stuff)
 
 - figure out why soundtracks seem to not work with commas (e.g. "CD, WEB" does not work for me)
-  - MAYBE see if soundtracks could work in OTW (this is probably a bad idea.)
+  - MAYBE see if soundtracks could work in OTW
+    - (this is likely a bad idea.)
 
 - figure out some way to autoclick "add to radarr" on downloads for PTP to Radarr. If possible.
   - also an option to disable notifications on ptp2radarr
