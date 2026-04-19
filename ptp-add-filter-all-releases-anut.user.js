@@ -315,6 +315,12 @@
       default: false,
       tooltip: "Work with jmxd' PTP Improved Tags script"
     },
+    quickie: {
+      label: 'quiCKIE',
+      type: 'checkbox',
+      default: false,
+      tooltip: "Work with WirlyWirly's quiCKIE script: Mouse over 🤝 in quiCKIE's settings for explanation"
+    },
     btntimer: {
       label: 'Timer for BTN TVDB ID searches via Sonarr (ms)',
       type: 'int',
@@ -743,6 +749,7 @@
     const timerDuration = GM_config.get('timerDuration') * 1000; // Convert to milliseconds
     let ptp_release_name = GM_config.get('ptp_name'); // true = show release name - false = original PTP release style. Ignored if Improved Tags  = true
     let improved_tags = GM_config.get('funky_tags'); // true = Change display to work fully with PTP Improved Tags from jmxd.
+    let quickie_buttons = GM_config.get('quickie'); // true = Change display to work  with quiCKIE script from WirlyWirly.
     const debug = GM_config.get('debugging');
     const easysearching = GM_config.get('easysearch');
     const valueinMIB = GM_config.get('valueinMIB');
@@ -6356,6 +6363,34 @@
               element.style.paddingRight = '51px';
             }
           }
+          
+          //Integration for quiCKIE
+          if (quickie_buttons) {
+            element.setAttribute('data-quickie_torrenturl', torrent.download_link);
+            const quickietranslatemap = {
+            /*  This is really ugly and unwieldy IMHO.
+                Maybe quiCKIE can handle this on its own side, but it works "enough" for now.
+                https://docs.google.com/spreadsheets/d/1zYZ2107xOZwQ37AjLTc5A4dUJl0ilg8oMrZyA0BGvc0/
+                I used this some. The tracker tracker! */
+             'ANT': 'Anthelion',
+             'BHD': 'Beyond-HD',
+             'BTN': 'BroadcasTheNet',
+             'HDB': 'HDBits',
+             'KG': 'Karagarga',
+             'MTV': 'MoreThanTV',
+             'PTP': 'PassThePopcorn',
+             'TVV': 'TV-Vault',
+             'NBL': 'Nebulance',
+             'OTW': 'Oldtoons',
+             'RMC': 'RetroMoviesClub',
+            };
+            element.setAttribute('data-quickie_torrenturl', torrent.download_link); //Adds Bunny button
+            const quickietracker = quickietranslatemap[tracker] || tracker();
+            /*the || tracker(); is for both possibility of acronym support
+            and to throw in redundancies like aither and cinemaz.
+            worst is it just breaks making the rabbits. */
+            element.setAttribute('data-quickie_tracker', quickietracker);
+          } 
 
           // If the element exists, handle both MTeam and RED functionality
           if (element) {
@@ -6657,6 +6692,20 @@
                 element.style.paddingRight = '51px';
               }
             }
+
+            //Integration for quiCKIE
+          if (quickie_buttons) {
+            element.setAttribute('data-quickie_torrenturl', torrent.download_link);
+            const quickietranslatemap = {
+            //The shpiel has already been said.
+             'OTW': 'Oldtoons', // They actually do have soundtracks!
+             'OPS': 'Orpheus',
+             'RED': 'Redacted',
+            };
+            element.setAttribute('data-quickie_torrenturl', torrent.download_link);
+            const quickietracker = quickietranslatemap[tracker] || tracker(); // also explained before
+            element.setAttribute('data-quickie_tracker', quickietracker);
+          }
 
             // Handle specific tracker download links
             if (element) {
@@ -7936,3 +7985,29 @@
     }
   }
 })();
+
+
+// unsorted trash notes
+//               // Not in quiCKIE yet.
+                //'BLU': 'blutopia',
+//              'OE': '',
+//              'RFX': '',
+                //'TIK': '',
+             //'HUNO': '',
+             //'MTeam': 'm-team',
+               //'PxHD': 'pixelhd',
+               //'BLU': 'blutopia',
+               //'CG': 'cinemageddon',
+               //'FL': 'filelist',
+                 //'DarkPeers': 'darkpeers',
+                 //':LDU': 'thelastdigitalunderground',
+                //'RAS': 'rastugan',
+               // Matches after .toLowerCase in quiCKIE's third party import and thus redundant
+              //'Aither': 'aither',
+              //'AvistaZ': 'AvistaZ'
+              //'AlphaRatio': 'alpharatio'
+              //'CinemaZ': 'cinemaz',
+                 //
+//               'PHD': '',
+//               'RTF': '',
+//               'LST': '',
