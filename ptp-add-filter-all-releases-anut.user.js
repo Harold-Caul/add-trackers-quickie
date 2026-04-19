@@ -111,7 +111,7 @@
     },
     ifl_api: { label: 'IFL_API_TOKEN', type: 'text', default: '' },
     kg: { label: 'Karagarga / KG', type: 'checkbox', default: false },
-    ldu: { label: 'TheLastDigitalUnderground / :LDU *', type: 'checkbox', default: false, tooltip: 'TheLastDigitalUnderground\nEnter API key below' },
+    ldu: { label: 'TheLastDigitalUnderground / :LDU *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     ldu_api: { label: 'LDU_API_TOKEN', type: 'text', default: '' },
     lst: { label: 'LST *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     lst_api: { label: 'LST_API_TOKEN', type: 'text', default: '' },
