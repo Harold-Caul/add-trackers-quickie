@@ -32,10 +32,10 @@
     avistaz_user: { label: 'Avistaz Username', type: 'text', default: '' },
     avistaz_pass: { label: 'Avistaz Password', type: 'text', default: '' },
     avistaz_pid: { label: 'Avistaz PID', type: 'text', default: '' },
-    ant: { label: 'ANT *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
+    ant: { label: 'Anthelion / ANT *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     ant_api: { label: 'ANT_API_TOKEN', type: 'text', default: '' },
     ar: {
-      label: 'AlphaRatio * ',
+      label: 'AR / AlphaRatio * ',
       type: 'checkbox',
       default: false,
       tooltip: 'Enter authkey and torrent pass below, get from download link'
@@ -43,7 +43,7 @@
     ar_auth: { label: 'AR auth key', type: 'text', default: '' },
     ar_pass: { label: 'AR torrent pass', type: 'text', default: '' },
     bhd: {
-      label: 'BHD *',
+      label: 'Beyond-HD / BHD *',
       type: 'checkbox',
       default: false,
       tooltip: 'Enter API and RSS key below'
@@ -57,13 +57,13 @@
       tooltip:
         'This will show seeding status at BHD, but requires an additional API call for every BHD torrent'
     },
-    blu: { label: 'BLU *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
+    blu: { label: 'Blutopia / BLU *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     blu_api: { label: 'BLU_API_TOKEN', type: 'text', default: '' },
-    btn: { label: 'BTN *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
+    btn: { label: 'BroadcasTheNet / BTN *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     btn_api: { label: 'BTN_API_TOKEN', type: 'text', default: '' },
-    cg: { label: 'CG', type: 'checkbox', default: false },
+    cg: { label: 'Cinemageddon / CG', type: 'checkbox', default: false },
     cinemaz: {
-      label: 'CinemaZ *',
+      label: 'CinemaZ / CZ *',
       type: 'checkbox',
       default: false,
       tooltip: 'Enter needed details below. PID can be found on your profile page'
@@ -73,7 +73,7 @@
     cinemaz_pid: { label: 'CinemaZ PID', type: 'text', default: '' },
     dp: { label: 'DarkPeers *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     dp_api: { label: 'DP_API_TOKEN', type: 'text', default: '' },
-    fl: { label: 'FL *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
+    fl: { label: 'FileList / FL *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     fl_user: { label: 'FL_USER_NAME', type: 'text', default: '' },
     fl_pass: {
       label: 'FL_PASS_KEY *',
@@ -82,7 +82,7 @@
       tooltip: 'Passkey from your user settings page, the upload form or a torrent in your client'
     },
     hdb: {
-      label: 'HDB *',
+      label: 'HDBits / HDB *',
       type: 'checkbox',
       default: false,
       tooltip: 'Enter username and passkey below'
@@ -99,43 +99,43 @@
       default: '',
       tooltip: 'Passkey from your HDB profile page'
     },
-    hhd: { label: 'HHD *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
+    hhd: { label: 'HomieHelpDesk / HHD *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     hhd_api: { label: 'HHD_API_TOKEN', type: 'text', default: '' },
-    huno: { label: 'HUNO *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
+    huno: { label: 'HawkeUno / HUNO *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     huno_api: { label: 'HUNO_API_TOKEN', type: 'text', default: '' },
     ifl: {
-      label: 'InfinityLibrary *',
+      label: 'InfinityLibrary / IFL *',
       type: 'checkbox',
       default: false,
       tooltip: 'Enter API key below'
     },
     ifl_api: { label: 'IFL_API_TOKEN', type: 'text', default: '' },
-    kg: { label: 'KG', type: 'checkbox', default: false },
-    ldu: { label: ':LDU *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
+    kg: { label: 'Karagarga / KG', type: 'checkbox', default: false },
+    ldu: { label: 'TheLastDigitalUnderground / :LDU *', type: 'checkbox', default: false, tooltip: 'TheLastDigitalUnderground\nEnter API key below' },
     ldu_api: { label: 'LDU_API_TOKEN', type: 'text', default: '' },
     lst: { label: 'LST *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     lst_api: { label: 'LST_API_TOKEN', type: 'text', default: '' },
-    lume: { label: 'LUME *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
+    lume: { label: 'Luminarr / LUME *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     lume_api: { label: 'LUME_API_TOKEN', type: 'text', default: '' },
-    MTeam: { label: 'MTeam *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
+    MTeam: { label: 'M-Team *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     MTeam_api: { label: 'MTeam_API_TOKEN', type: 'text', default: '' },
-    mtv: { label: 'MTV *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
+    mtv: { label: 'MoreThanTV / MTV *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     mtv_api: { label: 'MTV_API_TOKEN', type: 'text', default: '' },
-    nbl: { label: 'NBL *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
+    nbl: { label: 'Nebulance / NBL *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     nbl_api: { label: 'NBL_API_TOKEN', type: 'text', default: '' },
-    oe: { label: 'OE *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
+    oe: { label: 'OnlyEncodes / OE *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     oe_api: { label: 'OE_API_TOKEN', type: 'text', default: '' },
-    otw: { label: 'OldToons *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
+    otw: { label: 'OldToons / OTW *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     otw_api: { label: 'OTW_API_TOKEN', type: 'text', default: '' },
     ops: {
-      label: 'OPS *',
+      label: 'Orpheus / OPS *',
       type: 'checkbox',
       default: false,
       tooltip: 'Enter API key below. Additional filtering options below'
     },
     ops_api: { label: 'OPS_API_TOKEN', type: 'text', default: '' },
     phd: {
-      label: 'PHD *',
+      label: 'PrivateHD / PHD *',
       type: 'checkbox',
       default: false,
       tooltip: 'Enter needed details below. PID can be found on your profile page'
@@ -143,36 +143,36 @@
     phd_user: { label: 'PHD Username', type: 'text', default: '' },
     phd_pass: { label: 'PHD Password', type: 'text', default: '' },
     phd_pid: { label: 'PHD PID', type: 'text', default: '' },
-    ptp: { label: 'PTP', type: 'checkbox', default: true },
-    pxhd: { label: 'PxHD', type: 'checkbox', default: false },
+    ptp: { label: 'PassThePopcorn / PTP', type: 'checkbox', default: true },
+    pxhd: { label: 'PixelHD / PxHD', type: 'checkbox', default: false },
     red: {
-      label: 'RED *',
+      label: 'Redacted / RED *',
       type: 'checkbox',
       default: false,
       tooltip: 'Enter API key below. Additional filtering options below'
     },
     red_api: { label: 'RED_API_TOKEN', type: 'text', default: '' },
-    ras: { label: 'RAS *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
+    ras: { label: 'Rastastugan / RAS *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     ras_api: { label: 'RAS_API_TOKEN', type: 'text', default: '' },
-    rmc: { label: 'RMC *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
+    rmc: { label: 'RetroMoviesClub / RMC *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     rmc_api: { label: 'RMC_API_TOKEN', type: 'text', default: '' },
-    rfx: { label: 'RFX *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
+    rfx: { label: 'Reelflix / RFX *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     rfx_api: { label: 'RFX_API_TOKEN', type: 'text', default: '' },
     rtf: {
-      label: 'RTF *',
+      label: 'RetroFlix / RTF *',
       type: 'checkbox',
       default: false,
       tooltip: 'Enter RTF username and password below'
     },
     rtf_user: { label: 'RTF Username', type: 'text', default: '' },
     rtf_pass: { label: 'RTF Password', type: 'text', default: '' },
-    sp: { label: 'SeedPool *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
+    sp: { label: 'SeedPool / SP *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     sp_api: { label: 'SP_API_TOKEN', type: 'text', default: '' },
-    tik: { label: 'TIK *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
+    tik: { label: 'Cinematik / TIK *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     tik_api: { label: 'TIK_API_TOKEN', type: 'text', default: '' },
-    tl: { label: 'TL', type: 'checkbox', default: false },
+    tl: { label: 'TorrentLeech / TL', type: 'checkbox', default: false },
     tvv: {
-      label: 'TVV *',
+      label: 'TV-Vault / TVV *',
       type: 'checkbox',
       default: false,
       tooltip: 'Enter auth key & torrent pass below'
@@ -196,20 +196,20 @@
       tooltip:
         "TVV has strict searching limits, especially for lower user groups. Disable this to search with more expensive options, better feedback including seeding status, but you're more likely to hit searching to soon error."
     },
-    ulcx: { label: 'ULCX *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
+    ulcx: { label: 'Upload.cx / ULCX *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     ulcx_api: { label: 'ULCX_API_TOKEN', type: 'text', default: '' },
-    yoink: { label: 'YOINK *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
+    yoink: { label: 'Yoinked / YOINK *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     yoink_api: { label: 'YOINK_API_TOKEN', type: 'text', default: '' },
-    yus: { label: 'YUS *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
+    yus: { label: 'Yu-Scene / YUS *', type: 'checkbox', default: false, tooltip: 'Enter API key below' },
     yus_api: { label: 'YUS_API_TOKEN', type: 'text', default: '' },
     media: {
-      label: 'RED/OPS media filtering',
+      label: 'Soundtrack media filtering',
       type: 'text',
       default: '',
       tooltip: 'Filter torrents from RED/OPS by media. CD, WEB, Vinyl'
     },
     format: {
-      label: 'RED/OPS format filtering',
+      label: 'Soundtrack format filtering',
       type: 'text',
       default: '',
       tooltip: 'Filter torrents from RED/OPS by format. FLAC, MP3'
@@ -431,7 +431,7 @@
                 Add releases from other trackers<br>
                 <small style='font-weight:normal; font-size:16px;'>Select only trackers you have access to</small>
                 <br><br>
-                <small style='font-weight:lighter; font-size:12px;'>Hover over names for tooltip help</small>
+                <small style='font-weight:lighter; font-size:12px;'>Hover over names for tooltip help; trackers with * require authentication keys</small>
             </div>
         `,
     fields: fields,
